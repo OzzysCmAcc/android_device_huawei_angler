@@ -20,6 +20,6 @@ allow rmt block_device:dir search;
 #debugfs access
 userdebug_or_eng(`
 typeattribute rmt qti_debugfs_domain;
-allow rfs_access debugfs:file write;
+allow rmt debugfs:file write;
 ')
 
